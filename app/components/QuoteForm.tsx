@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { services } from "@/app/data/services";
 
 export default function QuoteForm() {
   const [form, setForm] = useState({
     name: "",
     phone: "",
     email: "",
+    town: "",
     service: "",
     size: "",
     message: "",
@@ -42,6 +44,7 @@ export default function QuoteForm() {
         name: "",
         phone: "",
         email: "",
+        town: "",
         service: "",
         size: "",
         message: "",
@@ -87,6 +90,16 @@ export default function QuoteForm() {
         className="rounded-xl bg-neutral-900 border border-white/10 px-5 py-4 text-white"
       />
 
+      <input
+        required
+        placeholder="Town / Area (e.g. George)"
+        value={form.town}
+        onChange={(e) =>
+          setForm({ ...form, town: e.target.value })
+        }
+        className="rounded-xl bg-neutral-900 border border-white/10 px-5 py-4 text-white"
+      />
+
       <select
         required
         value={form.service}
@@ -96,11 +109,15 @@ export default function QuoteForm() {
         className="rounded-xl bg-neutral-900 border border-white/10 px-5 py-4 text-white"
       >
         <option value="">Select Project Type</option>
-        <option>Garage Floor</option>
-        <option>Metallic Epoxy</option>
-        <option>Decorative Flake</option>
-        <option>Stone Carpet</option>
-        <option>Commercial Flooring</option>
+
+        {services.map((service) => (
+          <option
+            key={service.slug}
+            value={service.title}
+          >
+            {service.title}
+          </option>
+        ))}
       </select>
 
       <select
