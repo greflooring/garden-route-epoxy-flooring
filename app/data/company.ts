@@ -1,11 +1,11 @@
 export const company = {
   name: "Garden Route Epoxy Flooring",
 
-  phone: "082 123 4567",
+  phone: "+27 61 069 2503",
 
-  email: "info@gardenrouteepoxy.co.za",
+  email: "greflooring@gmail.com",
 
-  whatsapp: "27821234567",
+  whatsapp: "27610692503",
 
   location: "Garden Route, South Africa",
 
