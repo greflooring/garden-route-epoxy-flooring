@@ -1,48 +1,37 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import ComparisonSlider from "./components/ComparisonSlider";
-import WhyChooseUs from "./components/WhyChooseUs";
-import Stats from "./components/Stats";
-import Services from "./components/Services";
-import Gallery from "./components/Gallery";
-import About from "./components/About";
-import Testimonials from "./components/Testimonials";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import FloatingWhatsApp from "./components/FloatingWhatsApp";
-import GoogleReviews from "./components/GoogleReviews";
-import FinalCTA from "./components/FinalCTA";
+import Hero from "@/app/components/sections/Hero";
+import TrustSection from "@/app/components/sections/TrustSection";
+import Services from "@/app/components/sections/Services";
+import AreasWeServe from "@/app/components/sections/AreasWeServe";
+import OurDifference from "@/app/components/sections/OurDifference";
+import Process from "@/app/components/sections/Process";
+import Stats from "@/app/components/sections/Stats";
+import WhyChooseUs from "@/app/components/sections/WhyChooseUs";
+import Testimonials from "@/app/components/sections/Testimonials";
+import GoogleReviews from "@/app/components/sections/GoogleReviews";
+import Contact from "@/app/components/sections/Contact";
+import FinalCTA from "@/app/components/sections/FinalCTA";
 
-export default function Home() {
+export const metadata = {
+  title: "Garden Route Epoxy Flooring | Premium Resin Flooring",
+  description:
+    "Premium epoxy, resin and stone carpet flooring for homes, garages, workshops, commercial buildings and industrial facilities across George, Mossel Bay, Hartenbos and the wider Garden Route." ,
+};
+
+export default function HomePage() {
   return (
-    <>
-      <Navbar />
-
-      <main className="flex-1">
-        <Hero />
-
-        <ComparisonSlider />
-
-        <WhyChooseUs />
-
-        <Services />
-
-        <Gallery />
-
-        <GoogleReviews />
-
-        <About />
-
-        <Testimonials />
-
-        <Contact />
-      </main>
-
+    <main className="bg-black text-white">
+      <Hero />
+      <TrustSection />
+      <Services />
+      <AreasWeServe />
+      <OurDifference />
+      <Process />
+      <Stats />
+      <WhyChooseUs />
+      <Testimonials />
+      <GoogleReviews />
+      <Contact />
       <FinalCTA />
-
-      <Footer />
-
-      <FloatingWhatsApp />
-    </>
+    </main>
   );
 }
