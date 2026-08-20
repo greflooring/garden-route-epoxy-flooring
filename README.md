@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Garden Route Epoxy Flooring
 
-## Getting Started
+Production website for `gardenrouteepoxyflooring.co.za`, built with Next.js and deployed on Vercel.
 
-First, run the development server:
+## Local checks
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm ci
+npm run lint
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Copy `.env.example` to `.env.local` for local API testing. Never commit `.env.local` or paste secret values into issues, pull requests, or chat.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Required Vercel environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `RESEND_API_KEY`
+- `CLOUDINARY_CLOUD_NAME`
+- `CLOUDINARY_API_KEY`
+- `CLOUDINARY_API_SECRET`
 
-## Learn More
+Optional overrides:
 
-To learn more about Next.js, take a look at the following resources:
+- `QUOTE_EMAIL_FROM` — defaults to `Garden Route Epoxy Flooring <quotes@gardenrouteepoxyflooring.co.za>`
+- `QUOTE_EMAIL_TO` — defaults to `greflooring@gmail.com`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Set secrets for Production and Preview in Vercel. The sending address requires `gardenrouteepoxyflooring.co.za` to be verified in Resend.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Launch checklist
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Run lint and the production build.
+2. Confirm the Resend domain is verified and the rotated API key is active.
+3. Confirm the rotated Cloudinary key pair is active.
+4. Deploy the production branch to Vercel.
+5. On the temporary Vercel URL, submit a real quote with one small test photo and confirm receipt.
+6. Add `gardenrouteepoxyflooring.co.za` and `www.gardenrouteepoxyflooring.co.za` in Vercel, select one canonical domain, and apply the DNS records Vercel supplies.
+7. Re-test the quote, photo upload, email reply-to, phone, WhatsApp, sitemap, and robots endpoints on the final domain.
+8. Only after the live tests pass, revoke the old Resend and Cloudinary credentials.

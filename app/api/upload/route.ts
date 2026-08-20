@@ -7,7 +7,14 @@ const ALLOWED_TYPES = new Set(["image/jpeg", "image/png", "image/webp"]);
 
 export async function POST(request: Request) {
   try {
-    const formData = await request.formData();
+    const formData = await request.formData().catch(() => null);
+
+    if (!formData) {
+      return NextResponse.json(
+        { success: false, error: "Invalid photo upload request." },
+        { status: 400 }
+      );
+    }
     const file = formData.get("file");
 
     if (!(file instanceof File)) {
@@ -20,6 +27,13 @@ export async function POST(request: Request) {
     if (!ALLOWED_TYPES.has(file.type)) {
       return NextResponse.json(
         { success: false, error: "Please upload a JPG, PNG or WEBP image." },
+        { status: 400 }
+      );
+    }
+
+    if (file.size === 0) {
+      return NextResponse.json(
+        { success: false, error: "The selected image is empty." },
         { status: 400 }
       );
     }
@@ -79,9 +93,8 @@ export async function POST(request: Request) {
     });
   } catch (error) {
     console.error("Cloudinary upload error:", error);
-    const message = error instanceof Error ? error.message : "Cloudinary upload failed.";
     return NextResponse.json(
-      { success: false, error: `Photo upload failed: ${message}` },
+      { success: false, error: "Photo upload failed. Please try again." },
       { status: 500 }
     );
   }

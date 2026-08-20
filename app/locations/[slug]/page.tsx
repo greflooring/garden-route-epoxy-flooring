@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle, MapPin, Phone } from "lucide-react";
+import { ArrowRight, CheckCircle, Phone } from "lucide-react";
 
 import { locations } from "@/app/data/locations";
 import { services } from "@/app/data/services";

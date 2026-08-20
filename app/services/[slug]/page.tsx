@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import { CheckCircle, ArrowRight } from "lucide-react";
 
 import Accordion from "@/app/components/ui/Accordion";

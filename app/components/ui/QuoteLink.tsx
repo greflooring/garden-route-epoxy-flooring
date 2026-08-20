@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname, useRouter } from "next/navigation";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 import type { ReactNode, MouseEvent } from "react";
 
@@ -46,8 +47,8 @@ export default function QuoteLink({ children, className, onClick }: QuoteLinkPro
   };
 
   return (
-    <a href="/#contact" onClick={handleClick} className={className}>
+    <Link href="/#contact" onClick={handleClick} className={className}>
       {children}
-    </a>
+    </Link>
   );
 }

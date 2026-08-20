@@ -38,7 +38,7 @@ export default function Hero() {
 
       {/* Content */}
 
-      <div className="relative z-20 mx-auto flex min-h-screen max-w-[1450px] items-center px-8">
+      <div className="relative z-20 mx-auto flex min-h-screen max-w-[1450px] items-start px-8 pb-44 pt-32 sm:pt-36 lg:items-center lg:py-40 xl:py-32">
 
         <div className="max-w-3xl">
 

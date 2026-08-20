@@ -154,13 +154,13 @@ export default function Footer() {
               </div>
 
               <div className="flex flex-wrap gap-3">
-                <a
+                <Link
                   href="/#contact"
                   data-conversion="quote"
                   className="inline-flex items-center gap-3 rounded-full bg-[#D4AF37] px-5 py-3 font-semibold text-black transition hover:bg-[#E6C35C]"
                 >
                   Get Free Quote
-                </a>
+                </Link>
 
                 <a
                   href="https://wa.me/27610692503?text=Hi%20Garden%20Route%20Epoxy%20Flooring%2C%20I%27d%20like%20to%20ask%20about%20a%20flooring%20project."

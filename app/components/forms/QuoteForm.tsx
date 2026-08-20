@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import Image from "next/image";
 import {
   CheckCircle2,
   ImagePlus,
@@ -31,6 +32,7 @@ const initialForm = {
   service: "",
   size: "",
   message: "",
+  website: "",
 };
 
 export default function QuoteForm() {
@@ -253,6 +255,18 @@ export default function QuoteForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6" aria-busy={busy}>
+      <div className="absolute -left-[10000px]" aria-hidden="true">
+        <label htmlFor="website">Website</label>
+        <input
+          id="website"
+          name="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          value={form.website}
+          onChange={(e) => updateField("website", e.target.value)}
+        />
+      </div>
       <div className="grid gap-6 md:grid-cols-2">
         <input
           required
@@ -385,11 +399,13 @@ export default function QuoteForm() {
                 key={photo.publicId}
                 className="group relative overflow-hidden rounded-xl border border-white/10 bg-black/40"
               >
-                <img
+                <Image
                   src={photo.url}
                   alt={photo.name}
+                  width={320}
+                  height={320}
+                  unoptimized
                   className="aspect-square w-full object-cover"
-                  loading="lazy"
                 />
                 <button
                   type="button"

@@ -9,7 +9,6 @@ import {
   MessageCircle,
   ArrowRight,
 } from "lucide-react";
-import Link from "next/link";
 
 import Container from "../ui/Container";
 import Badge from "../ui/Badge";
@@ -152,8 +151,8 @@ export default function Testimonials() {
           </h3>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
-            Whether you're planning a residential garage, commercial
-            showroom or industrial workspace, we'd love to help you
+            Whether you&apos;re planning a residential garage, commercial
+            showroom or industrial workspace, we&apos;d love to help you
             choose the perfect epoxy flooring solution.
           </p>
 

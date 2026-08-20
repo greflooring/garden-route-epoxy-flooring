@@ -1,7 +1,5 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
-
 export const alt = "Garden Route Epoxy Flooring";
 export const size = {
   width: 1200,
@@ -39,6 +37,9 @@ export default function TwitterImage() {
 
         <div
           style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
             marginTop: 30,
             fontSize: 72,
             fontWeight: 800,

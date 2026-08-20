@@ -54,15 +54,15 @@ export default function Contact() {
           </Badge>
 
           <h2 className="mt-8 text-5xl font-black text-white md:text-7xl">
-            Let's Create Your
+            Let&apos;s Create Your
             <span className="mt-2 block text-[#D4AF37]">
               Perfect Floor
             </span>
           </h2>
 
           <p className="mx-auto mt-8 max-w-3xl text-xl leading-9 text-gray-400">
-            Whether you're upgrading a garage, workshop, showroom,
-            commercial building or entertainment area, we're here to
+            Whether you&apos;re upgrading a garage, workshop, showroom,
+            commercial building or entertainment area, we&apos;re here to
             help you choose the ideal flooring solution.
           </p>
 
@@ -81,7 +81,7 @@ export default function Contact() {
             </h3>
 
             <p className="mt-4 leading-8 text-gray-400">
-              Complete the form below and we'll get back to you as soon
+              Complete the form below and we&apos;ll get back to you as soon
               as possible.
             </p>
 
@@ -142,7 +142,7 @@ export default function Contact() {
               </h3>
 
               <p className="mt-4 leading-8 text-gray-400">
-                Have questions? We'd love to help you choose the right
+                Have questions? We&apos;d love to help you choose the right
                 epoxy flooring solution for your home or business.
               </p>
 
