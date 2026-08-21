@@ -4,7 +4,7 @@ import { MessageCircle, Phone, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const phoneHref = "tel:+27610692503";
-const whatsappHref = "https://wa.me/27610692503";
+const whatsappHref = "https://wa.me/27622020131";
 
 export default function MobileConversionBar() {
   return (

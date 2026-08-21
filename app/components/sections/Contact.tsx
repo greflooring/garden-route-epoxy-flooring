@@ -260,7 +260,7 @@ export default function Contact() {
 
             <div className="grid gap-4">
               <a
-                href="https://wa.me/27610692503?text=Hi%20Garden%20Route%20Epoxy%20Flooring%2C%20I%27d%20like%20a%20free%20quote."
+                href="https://wa.me/27622020131?text=Hi%20Garden%20Route%20Epoxy%20Flooring%2C%20I%27d%20like%20a%20free%20quote."
                 target="_blank"
                 rel="noopener noreferrer"
                 data-conversion="whatsapp"
@@ -311,7 +311,7 @@ export default function Contact() {
             </div>
 
             <a
-              href="https://wa.me/27610692503"
+              href="https://wa.me/27622020131"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-between rounded-[30px] border border-green-500/30 bg-gradient-to-r from-green-500/10 to-green-600/10 p-8 transition-all duration-300 hover:border-green-400 hover:bg-green-500/15"

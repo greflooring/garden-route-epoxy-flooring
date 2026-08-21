@@ -5,7 +5,7 @@ export const siteConfig = {
 
   email: "greflooring@gmail.com",
 
-  whatsapp: "+27610692503",
+  whatsapp: "+27622020131",
 
   address: "Garden Route, South Africa",
 

@@ -5,7 +5,7 @@ export const company = {
 
   email: "greflooring@gmail.com",
 
-  whatsapp: "27610692503",
+  whatsapp: "27622020131",
 
   location: "Garden Route, South Africa",
 

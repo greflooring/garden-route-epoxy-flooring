@@ -22,7 +22,7 @@ type UploadedPhoto = {
 const MAX_PHOTOS = 5;
 const MAX_FILE_SIZE = 5 * 1024 * 1024;
 const ALLOWED_TYPES = ["image/jpeg", "image/png", "image/webp"];
-const WHATSAPP_NUMBER = "27610692503";
+const WHATSAPP_NUMBER = "27622020131";
 
 const initialForm = {
   name: "",
