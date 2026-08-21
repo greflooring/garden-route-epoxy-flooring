@@ -35,7 +35,7 @@ export default function FinalCTA() {
             </Button>
 
             <a
-              href="https://wa.me/27610692503?text=Hi%20Garden%20Route%20Epoxy%20Flooring%2C%20I%27d%20like%20to%20discuss%20a%20flooring%20project."
+              href="https://wa.me/27622020131?text=Hi%20Garden%20Route%20Epoxy%20Flooring%2C%20I%27d%20like%20to%20discuss%20a%20flooring%20project."
               target="_blank"
               rel="noopener noreferrer"
               data-conversion="whatsapp"
