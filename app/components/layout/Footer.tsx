@@ -124,7 +124,21 @@ export default function Footer() {
                   className="text-[#D4AF37]"
                 />
 
-                <span>061 069 2503</span>
+                <span>Conrad — 061 069 2503</span>
+
+              </a>
+
+              <a
+                href="tel:+27678454862"
+                className="flex items-center gap-4 text-gray-400 transition hover:text-[#D4AF37]"
+              >
+
+                <Phone
+                  size={20}
+                  className="text-[#D4AF37]"
+                />
+
+                <span>Ryan — 067 845 4862</span>
 
               </a>
 
