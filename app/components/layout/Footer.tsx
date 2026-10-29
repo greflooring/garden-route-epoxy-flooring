@@ -58,6 +58,7 @@ export default function Footer() {
                 ["Why Choose Us", "/#why-us"],
                 ["Process", "/#process"],
                 ["Contact", "/#contact"],
+                ["Privacy Policy", "/privacy"],
               ].map(([title, href]) => (
 
                 <li key={title}>
