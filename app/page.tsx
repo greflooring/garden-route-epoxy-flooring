@@ -1,8 +1,6 @@
 import Hero from "@/app/components/sections/Hero";
-import TrustSection from "@/app/components/sections/TrustSection";
 import Services from "@/app/components/sections/Services";
 import AreasWeServe from "@/app/components/sections/AreasWeServe";
-import OurDifference from "@/app/components/sections/OurDifference";
 import FinalCTA from "@/app/components/sections/FinalCTA";
 
 export const metadata = {
@@ -15,10 +13,8 @@ export default function HomePage() {
   return (
     <main className="bg-black text-white">
       <Hero />
-      <TrustSection />
       <Services />
       <AreasWeServe />
-      <OurDifference />
       <FinalCTA />
     </main>
   );
