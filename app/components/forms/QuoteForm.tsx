@@ -268,7 +268,8 @@ export default function QuoteForm() {
         />
       </div>
       <div className="grid gap-6 md:grid-cols-2">
-        <input
+        <label htmlFor="quote-name" className="sr-only">Full name</label>
+        <input id="quote-name"
           required
           disabled={busy}
           autoComplete="name"
@@ -277,7 +278,8 @@ export default function QuoteForm() {
           onChange={(e) => updateField("name", e.target.value)}
           className={inputStyle}
         />
-        <input
+        <label htmlFor="quote-phone" className="sr-only">Phone number</label>
+        <input id="quote-phone"
           required
           disabled={busy}
           autoComplete="tel"
@@ -287,7 +289,8 @@ export default function QuoteForm() {
           onChange={(e) => updateField("phone", e.target.value)}
           className={inputStyle}
         />
-        <input
+        <label htmlFor="quote-email" className="sr-only">Email address</label>
+        <input id="quote-email"
           required
           disabled={busy}
           autoComplete="email"
@@ -297,7 +300,8 @@ export default function QuoteForm() {
           onChange={(e) => updateField("email", e.target.value)}
           className={inputStyle}
         />
-        <input
+        <label htmlFor="quote-town" className="sr-only">Town or area</label>
+        <input id="quote-town"
           required
           disabled={busy}
           autoComplete="address-level2"
@@ -309,7 +313,8 @@ export default function QuoteForm() {
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">
-        <select
+        <label htmlFor="quote-service" className="sr-only">Flooring service</label>
+        <select id="quote-service"
           required
           disabled={busy}
           value={form.service}
@@ -323,7 +328,8 @@ export default function QuoteForm() {
             </option>
           ))}
         </select>
-        <select
+        <label htmlFor="quote-size" className="sr-only">Approximate area</label>
+        <select id="quote-size"
           required
           disabled={busy}
           value={form.size}
@@ -338,7 +344,8 @@ export default function QuoteForm() {
         </select>
       </div>
 
-      <textarea
+      <label htmlFor="quote-message" className="sr-only">Project details</label>
+      <textarea id="quote-message"
         required
         disabled={busy}
         rows={7}
@@ -451,7 +458,7 @@ export default function QuoteForm() {
       </button>
 
       <p className="text-center text-xs leading-5 text-gray-500">
-        Your details are used only to respond to your quote request. Photos are securely uploaded and shared with our quoting team.
+        Your details and optional photos are used to respond to your quote request and shared with the quoting team. Please do not upload sensitive personal documents.
       </p>
     </form>
   );

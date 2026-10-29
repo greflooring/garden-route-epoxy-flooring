@@ -6,8 +6,6 @@ import OurDifference from "@/app/components/sections/OurDifference";
 import Process from "@/app/components/sections/Process";
 import Stats from "@/app/components/sections/Stats";
 import WhyChooseUs from "@/app/components/sections/WhyChooseUs";
-import Testimonials from "@/app/components/sections/Testimonials";
-import GoogleReviews from "@/app/components/sections/GoogleReviews";
 import Contact from "@/app/components/sections/Contact";
 import FinalCTA from "@/app/components/sections/FinalCTA";
 
@@ -28,8 +26,6 @@ export default function HomePage() {
       <Process />
       <Stats />
       <WhyChooseUs />
-      <Testimonials />
-      <GoogleReviews />
       <Contact />
       <FinalCTA />
     </main>
