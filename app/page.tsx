@@ -3,9 +3,6 @@ import TrustSection from "@/app/components/sections/TrustSection";
 import Services from "@/app/components/sections/Services";
 import AreasWeServe from "@/app/components/sections/AreasWeServe";
 import OurDifference from "@/app/components/sections/OurDifference";
-import Process from "@/app/components/sections/Process";
-import Stats from "@/app/components/sections/Stats";
-import WhyChooseUs from "@/app/components/sections/WhyChooseUs";
 import Contact from "@/app/components/sections/Contact";
 import FinalCTA from "@/app/components/sections/FinalCTA";
 
@@ -23,10 +20,6 @@ export default function HomePage() {
       <Services />
       <AreasWeServe />
       <OurDifference />
-      <Process />
-      <Stats />
-      <WhyChooseUs />
-      <Contact />
       <FinalCTA />
     </main>
   );

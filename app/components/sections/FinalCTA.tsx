@@ -26,7 +26,7 @@ export default function FinalCTA() {
 
           <div className="mt-12 flex flex-wrap justify-center gap-6">
 
-            <Button href="/#contact">
+            <Button href="/contact">
               Request Quote
               <ArrowRight
                 className="ml-2"
